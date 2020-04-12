@@ -1,3 +1,4 @@
+---
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
@@ -16,7 +17,7 @@ spec:
   values:
     image:
       repository: stefanprodan/podinfo
-      tag: 3.1.0
+      tag: 3.1.5
     service:
       enabled: true
       type: ClusterIP
@@ -30,4 +31,4 @@ spec:
           proxy_hide_header l5d-server-id;
       path: /
       hosts:
-        - 174.138.116.37.nip.io
+      - 174.138.116.37.nip.io
