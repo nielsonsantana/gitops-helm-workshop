@@ -1,15 +1,15 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: load-tester
+  name: flagger-loadtester
   namespace: prod
   annotations:
     fluxcd.io/ignore: "true"
 spec:
-  releaseName: load-tester
+  releaseName: flagger-loadtester
   chart:
     git: https://github.com/weaveworks/flagger
     ref: 0.18.4
     path: charts/loadtester
   values:
-    fullnameOverride: load-tester
+    fullnameOverride: flagger-loadtester
