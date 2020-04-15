@@ -31,3 +31,4 @@ spec:
       path: /
       hosts:
       - 174.138.116.37.nip.io
+      - 167.71.183.4.nip.io
